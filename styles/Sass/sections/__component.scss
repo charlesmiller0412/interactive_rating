@@ -38,15 +38,13 @@
         background-color: $orange;
         color: #fff;
     }
-}
 
-.activeChoice {
-    background-color: $greyL;
-    color: #fff;
-}
+    &--active {
+        background-color: $greyL;
+        color: #fff;
+    }
 
-@media screen and (min-width: 795px) {
-    .choice {
+    @media screen and (min-width: 795px) {
         width: 51px;
         height: 51px;
         font-size: 16px;

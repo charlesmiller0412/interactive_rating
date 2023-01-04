@@ -7,6 +7,10 @@
     justify-content: space-between;
     position: relative;
 
+    @media screen and (min-width: 795px) {
+        padding: 32px;
+    }
+
     & picture {
         width: 40px;
         height: 40px;
@@ -20,9 +24,19 @@
         -moz-border-radius: 2rem;
         -ms-border-radius: 2rem;
         -o-border-radius: 2rem;
+
+        @media screen and (min-width: 795px) {
+            width: 48px;
+            height: 48px;
+        }
         & img {
             width: 14px;
             height: 14px;
+
+            @media screen and (min-width: 795px) {
+                width: 16px;
+                height: 16px;
+            }
         }
     }
 
@@ -31,6 +45,11 @@
         font-size: 24px;
         line-height: 30px;
         color: #fff;
+
+        @media screen and (min-width: 795px) {
+            font-size: 28px;
+            line-height: 35px;
+        }
     }
 
     & p {
@@ -38,6 +57,11 @@
         font-size: 14px;
         line-height: 157%;
         color: $greyL;
+
+        @media screen and (min-width: 795px) {
+            font-size: 15px;
+            line-height: 24px;
+        }
     }
 
     &__choices {
@@ -88,28 +112,5 @@
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
-    }
-}
-
-@media screen and (min-width: 795px) {
-    .rating {
-        padding: 32px;
-        & picture {
-            width: 48px;
-            height: 48px;
-            & img {
-                width: 16px;
-                height: 16px;
-            }
-        }
-        & h1 {
-            font-size: 28px;
-            line-height: 35px;
-        }
-
-        & p {
-            font-size: 15px;
-            line-height: 24px;
-        }
     }
 }

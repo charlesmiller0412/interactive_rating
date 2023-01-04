@@ -7,6 +7,10 @@
     height: 100%;
     padding: 35px 24px;
 
+    @media screen and (min-width: 795px) {
+        padding: 45px 40px;
+    }
+
     & span {
         color: $orange;
         font-size: 14px;
@@ -18,12 +22,23 @@
         -moz-border-radius: 22.5px;
         -ms-border-radius: 22.5px;
         -o-border-radius: 22.5px;
+
+        @media screen and (min-width: 795px) {
+            padding: 4px 20px;
+            font-size: 15px;
+            line-height: 160%;
+        }
     }
 
     & h2 {
         color: #fff;
         font-size: 24px;
         line-height: 30px;
+
+        @media screen and (min-width: 795px) {
+            font-size: 28px;
+            line-height: 35px;
+        }
     }
 
     & p {
@@ -32,22 +47,8 @@
         line-height: 22px;
         width: 279px;
         text-align: center;
-    }
-}
 
-@media screen and (min-width: 795px) {
-    .thanks {
-        padding: 45px 40px;
-        & span {
-            padding: 4px 20px;
-            font-size: 15px;
-            line-height: 160%;
-        }
-        & h2 {
-            font-size: 28px;
-            line-height: 35px;
-        }
-        & p {
+        @media screen and (min-width: 795px) {
             font-size: 15px;
             line-height: 160%;
             width: 340px;

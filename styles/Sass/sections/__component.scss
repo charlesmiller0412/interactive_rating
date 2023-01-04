@@ -1,0 +1,54 @@
+.component {
+    height: clamp(360px, 60%, 416px);
+    width: 100%;
+    max-width: 412px;
+    background: radial-gradient(
+        98.96% 98.96% at 50% 0%,
+        #232a34 0%,
+        #181e27 100%
+    );
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.choice {
+    width: 42px;
+    height: 42px;
+    background: $blueD;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 14px;
+    font-weight: $bold;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $greyD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    &:hover {
+        background-color: $orange;
+        color: #fff;
+    }
+}
+
+.activeChoice {
+    background-color: $greyL;
+    color: #fff;
+}
+
+@media screen and (min-width: 795px) {
+    .choice {
+        width: 51px;
+        height: 51px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,31 @@
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$greyL: hsl(217, 12%, 63%);
+$greyD: hsl(216, 12%, 54%);
+$blueD: hsl(213, 19%, 18%);
+$blueVD: hsl(216, 12%, 8%);
+$normal: 400;
+$bold: 700;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-size: 16px;
+    background-color: $blueVD;
+}
+
+main {
+    width: 100vw;
+    padding: 0 24px;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    & button {
+        cursor: pointer;
+    }
+}

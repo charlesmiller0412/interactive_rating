@@ -30,12 +30,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/charlesmiller0412/interactive_rating/blob/main/Project%20Display%20Images/interactiveRatingDesktop.png?raw=true)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [https://github.com/charlesmiller0412/interactive_rating](https://github.com/charlesmiller0412/interactive_rating)
+-   Live Site URL: [https://charlesmiller0412.github.io/interactive_rating/](https://charlesmiller0412.github.io/interactive_rating/)
 
 ## My process
 

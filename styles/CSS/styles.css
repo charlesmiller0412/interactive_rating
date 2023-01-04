@@ -144,7 +144,7 @@ main button {
   align-items: center;
   justify-content: space-between;
 }
-.rating__submit {
+.rating__btn {
   background: hsl(25deg, 97%, 53%);
   color: #fff;
   font-weight: 700;
@@ -160,11 +160,11 @@ main button {
   -o-border-radius: 22.5px;
   border: none;
 }
-.rating__submit:hover {
+.rating__btn:hover {
   background-color: #fff;
   color: hsl(25deg, 97%, 53%);
 }
-.rating__submit:active {
+.rating__btn:active {
   transform: scale(0.99);
   -webkit-transform: scale(0.99);
   -moz-transform: scale(0.99);

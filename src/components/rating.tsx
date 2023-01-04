@@ -8,6 +8,7 @@ export const Rating = (props: any) => {
     function handleClick(num: any) {
         props.setChoice(num);
         console.log(props.choice);
+        return props.choice;
     }
 
     const handleSubmit = () => {
@@ -21,6 +22,9 @@ export const Rating = (props: any) => {
         }, 3000);
     };
 
+    // declare array of ratings
+    let choices: number[] = [1, 2, 3, 4, 5];
+
     return (
         <div className="rating">
             <picture>
@@ -33,55 +37,23 @@ export const Rating = (props: any) => {
                     feedback is appreciated to help us improve our offering!
                 </p>
             </div>
+            {/* map through rating choices array & change style onClick */}
             <div className="rating__choices">
-                <Choice
-                    num={1}
-                    onClick={() => {
-                        props.setChoice(1);
-                    }}
-                    className={
-                        props.choice === 1 ? "choice activeChoice" : "choice"
-                    }
-                />
-                <Choice
-                    num={2}
-                    onClick={() => {
-                        props.setChoice(2);
-                    }}
-                    className={
-                        props.choice === 2 ? "choice activeChoice" : "choice"
-                    }
-                />
-                <Choice
-                    num={3}
-                    choice={props.choice}
-                    onClick={() => {
-                        props.setChoice(3);
-                    }}
-                    className={
-                        props.choice === 3 ? "choice activeChoice" : "choice"
-                    }
-                />
-                <Choice
-                    num={4}
-                    onClick={() => {
-                        props.setChoice(4);
-                    }}
-                    className={
-                        props.choice === 4 ? "choice activeChoice" : "choice"
-                    }
-                />
-                <Choice
-                    num={5}
-                    onClick={() => {
-                        props.setChoice(5);
-                    }}
-                    className={
-                        props.choice === 5 ? "choice activeChoice" : "choice"
-                    }
-                />
+                {choices.map((choice: number) => (
+                    <Choice
+                        num={choice}
+                        onClick={() => {
+                            props.setChoice(choice);
+                        }}
+                        className={
+                            props.choice === choice
+                                ? "choice choice--active"
+                                : "choice"
+                        }
+                    />
+                ))}
             </div>
-            <button className="rating__submit" onClick={handleSubmit}>
+            <button className="rating__btn" onClick={handleSubmit}>
                 submit
             </button>
             {error ? <span>Please select a rating...</span> : ""}

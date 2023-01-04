@@ -25,6 +25,7 @@ main {
     height: 100vh;
     display: grid;
     place-items: center;
+    overflow: hidden;
     & button {
         cursor: pointer;
     }

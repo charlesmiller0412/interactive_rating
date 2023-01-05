@@ -27,12 +27,12 @@ export const Rating = (props: any) => {
 
     return (
         <div className="rating">
-            <picture>
-                <img src={star} alt="star" />
+            <picture className="rating__picture">
+                <img src={star} alt="star" className="rating__picture--img"/>
             </picture>
-            <div className="message">
-                <h1>How did we do?</h1>
-                <p>
+            <div className="rating__message">
+                <h1 className="rating__message--title">How did we do?</h1>
+                <p className="rating__message--text">
                     Please let us know how we did with your support request. All
                     feedback is appreciated to help us improve our offering!
                 </p>
@@ -53,10 +53,10 @@ export const Rating = (props: any) => {
                     />
                 ))}
             </div>
-            <button className="rating__btn" onClick={handleSubmit}>
+            <button className="rating__submit" onClick={handleSubmit}>
                 submit
             </button>
-            {error ? <span>Please select a rating...</span> : ""}
+            {error ? <span className="rating__error">Please select a rating...</span> : ""}
         </div>
     );
 };

@@ -11,7 +11,7 @@
         padding: 32px;
     }
 
-    & picture {
+    &__picture {
         width: 40px;
         height: 40px;
         display: flex;
@@ -29,7 +29,7 @@
             width: 48px;
             height: 48px;
         }
-        & img {
+        &--img {
             width: 14px;
             height: 14px;
 
@@ -40,27 +40,29 @@
         }
     }
 
-    & h1 {
-        font-weight: $bold;
-        font-size: 24px;
-        line-height: 30px;
-        color: #fff;
+    &__message {
+        &--title {
+            font-weight: $bold;
+            font-size: 24px;
+            line-height: 30px;
+            color: #fff;
 
-        @media screen and (min-width: 795px) {
-            font-size: 28px;
-            line-height: 35px;
+            @media screen and (min-width: 795px) {
+                font-size: 28px;
+                line-height: 35px;
+            }
         }
-    }
 
-    & p {
-        margin-top: 10px;
-        font-size: 14px;
-        line-height: 157%;
-        color: $greyL;
+        &--text {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 157%;
+            color: $greyL;
 
-        @media screen and (min-width: 795px) {
-            font-size: 15px;
-            line-height: 24px;
+            @media screen and (min-width: 795px) {
+                font-size: 15px;
+                line-height: 24px;
+            }
         }
     }
 
@@ -71,7 +73,7 @@
         justify-content: space-between;
     }
 
-    &__btn {
+    &__submit {
         background: $orange;
         color: #fff;
         font-weight: $bold;
@@ -90,6 +92,7 @@
         &:hover {
             background-color: #fff;
             color: $orange;
+            cursor: pointer;
         }
 
         &:active {
@@ -101,7 +104,7 @@
         }
     }
 
-    & span {
+    &__error {
         color: red;
         font-size: 12px;
         position: absolute;

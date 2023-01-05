@@ -26,7 +26,4 @@ main {
     display: grid;
     place-items: center;
     overflow: hidden;
-    & button {
-        cursor: pointer;
-    }
 }
